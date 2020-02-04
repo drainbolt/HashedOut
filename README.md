@@ -1,10 +1,10 @@
-# 2019fall_groot
+# Reupload of original
 
 Authors: David Rainbolt, Andrew Berger, Winston Boyd, and Josh Herman
 
 ## About
 
-This app is used to search Twitter's Hastags. It returns the searched hastags into a table. It also allows for a history of searches, and calculates data about the hastags as well.
+This app is used to search Twitter's Hastags. It returns the searched hastags into a table. It also allows for a history of searches, and calculates data about the hastags as well. It does require a Twitter API Key.
 
 ## Using the App
 
