@@ -1,0 +1,32 @@
+#trendingContent, #viralContent
+{
+    opacity: 1;
+    background: rgba(10, 10, 10, 0.9);
+}
+
+#trendingContent, #viralContent
+{
+    color: white;
+}
+
+#oneTagWarning
+{
+    background: chocolate;   
+}
+#enterTwo
+{
+    background: rgba(255, 0, 98, 0.8);
+    padding-top: 25px;
+}
+.viralBox
+{
+    height: 109px;
+    width: 54%;
+    font-size: 20px;
+    padding: 21px 10px;
+    text-shadow: 1px 1px black;
+    margin: 0 auto;
+    opacity: 0.9;
+    border-radius: 5px;
+    box-shadow: 1px 1px rgba(243, 241, 241, 0.6);
+}

@@ -1,0 +1,31 @@
+{
+  "name": "groot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utk-cs/2019fall_groot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/utk-cs/2019fall_groot/issues"
+  },
+  "homepage": "https://github.com/utk-cs/2019fall_groot#readme",
+  "devDependencies": {
+    "electron": "^6.0.5",
+    "jest": "^24.9.0",
+    "table2csv": "^1.1.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "bower": "^1.8.8",
+    "jquery": "^3.4.1",
+    "twitter": "^1.7.1"
+  }
+}

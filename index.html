@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>&#35;hashedOut</title>
+      <script>
+        let jQuery = require('jquery')
+      </script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="appstyle.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+      <script>
+        require('./app.js');
+      </script>
+      <link rel = "icon" href ="Logo.PNG" type = "image/x-icon"> 
+      <link rel="stylesheet" type="text/css" href="appstyle.css"/>
+      <link rel="stylesheet" type="text/css" href="graphSauce.css"/>
+  </head>
+  
+  <body>
+    <div class = "headerTable">
+      <ul id= "headerTabBar" class = "nav nav-justified">
+        <li class="active"><a id = "home" href="index.html" class="headerTable">
+          <img src= "https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/home-circle-blue-512.png" width = "30" height = "30">
+          Home</a></li>
+        <li><a id = "news" href="news.html" class="headerTable">
+          <img src= "https://cdn1.iconfinder.com/data/icons/office-1/128/4-512.png" width = "30" height = "30">
+          News</a></li>
+        <li><a id = "contact" href="contact.html" class="headerTable">
+          <img src= "https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes-3/3/61-512.png" width = "30" height = "30">
+          Contact</a></li>
+        <li><a id = "about" href="about.html" class="headerTable">
+          <img src= "https://webstockreview.net/images/person-icon-png-7.png" width = "30" height = "30">
+          About</a></li>
+      </ul>
+    
+    <div class="headertab-content">
+      <div id="Home" class="tab-pane fade in active">
+      </div>
+      <div id="News" class="tab-pane fade">
+        <p style = "background: transparent; color: white; font-size: 25px; font-weight:300;"> The search bar is now up and running! Check back here for more updates.</p>
+      </div>
+      <div id="Contact" class="tab-pane fade">
+        <p style = "background: transparent; color: white; font-size: 25px; font-weight:300;">If you have any issues, let us know! Contact:wboyd8@vols.utk.edu       
+        </p>
+      </div>
+      <div id="About" class="tab-pane fade">
+        <p style = "background: transparent; color: white; font-size: 25px; font-weight:300;">Hashed Out is a web application that allows you to search twitter for all your favorite hashtags.
+        Just type in a word and hit the search button!</p>
+      </div>
+    </div> 
+    </div>     
+
+    <fieldset>
+      <input id="searchBar" type="text" class="ghost-input" placeholder="Search for a Hashtag!" required> 
+      <button type = "submit" id = "searchButton">
+        Search
+      </button>
+    </fieldset>
+
+    <div class="container">
+      <ul id="tableTabBar" class="nav nav-tabs">
+        <li class="active"><a id="tweets" data-toggle="tab" class="tabTable" href="#Tweets">Tweets</a></li>
+        <li><a id="history" data-toggle="tab" class="tabTable" href="#History">History</a></li>
+        <li><a id="trending" data-toggle="tab" class="tabTable" href="#Trending">Trending</a></li>
+        <li><a id="viral" data-toggle="tab" class="tabTable" href="#Viral">Viral</a></li>
+      </ul>
+    </div>
+
+    <div class="tab-content">
+      <div id="Tweets" class="tab-pane fade in active">
+          <table id="tweet_table">
+            <tr>
+              <td id="default_search">
+                Search for a hashtag to see results!
+              </td>
+            </tr>
+          </table>
+          <button id="export_button">
+            <a href="" id="link_id"></a>
+            Export to CSV!</button>
+      </div>
+      <div id="History" class="tab-pane fade">
+        <div id="historyContent" >
+          <button type="button" id="clearHistoryButton">Clear History</button>
+          <table id="hashtags_table"></table>
+        </div>
+      </div>
+      <div id="Trending" class="tab-pane fade">
+        <div id="trendingContent"></div>
+      </div>
+      <div id="Viral" class="tab-pane fade">
+        <div id="viralContent"></div>      
+      </div>
+    </div>
+  </body>
+
+ <script src="footer.js"></script>
+
+</html>
+
