@@ -1,0 +1,601 @@
+html {
+  position: relative;
+  min-width:1020px;
+}
+body {
+
+  /*background: url(https://wallperio.com/data/out/541/twitter-wallpaper_628073983.png);*/
+  background-image: url("bluesquares.png");
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 250px;
+  -webkit-animation: AnimationName 60s ease infinite;
+  -moz-animation: AnimationName 60s ease infinite;
+  animation: AnimationName 60s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.footer{
+  position: absolute;
+  color: white;
+  height: 150px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  margin-bottom: 0px;
+  background-image: linear-gradient(rgb(34, 114, 189), #0d2d4b); 
+} 
+.footer-copyright{
+  background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1, #FF3706);
+    background-size: 600% 100%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+}
+
+#clearHistoryButton{
+  margin: 5px 0px;
+  float: left;
+}
+#tweet_table #header-class, thead{
+  display:block;
+  background: url(https://articles-images.sftcdn.net/wp-content/uploads/sites/3/2017/05/twitter-logo-small-fade-1920.png);
+  width:800px;
+  border-collapse: collapse;
+  border: 0.5px solid whitesmoke;
+  color: black;
+  word-wrap: break-word;
+  opacity: 0.9;
+  margin: 0 auto;
+  position: sticky;
+}
+
+#tweet_table, #hashtags_table, td{
+    background-color: black;
+    background-size: 1000% 1000%;
+    border-collapse: collapse;
+    border: 0.5px solid whitesmoke;
+    color: white;
+    word-wrap: break-word;
+    opacity: 0.8;
+    position:relative;
+    margin: 0 auto;
+    width:100%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+#tweet_table, tbody {
+  display: block;
+  height: 900px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width:1000px;
+}
+
+#tweets {
+  border-radius: 5px 0px 0px 0px;
+  border-right: 0.5px rgba(100,100,100,0.7);
+}
+#history {
+  border-right: 0.5px rgba(100,100,100,0.7);
+}
+#htRates{
+  background: rgba(76, 183, 74, 0.9);
+}
+#viral {
+  border-radius: 0px 5px 0px 0px;
+  border-left: 0.5px rgba(100,100,100,0.7);
+}
+
+tr:hover {
+    background-color: rgb(107, 137, 156);
+}
+th, td {
+        padding: 15px;
+}
+
+#searchBar {
+  width: 800px;
+  color: black;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 25px;
+  border: 4px ridge;
+  border-color:deepskyblue;
+  position: relative;
+  z-index: 10001;
+}
+
+#searchButton {
+  opacity: 0.9;
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+  min-width: 10%;
+  height: 70px;
+  color: gray;
+  border: 5px solid transparent;
+  margin: 15px 10px;
+  font-size: 30px;
+  min-width: 120px;
+  /*font-weight: bold;*/
+  background-image:
+    linear-gradient(white, rgb(253, 253, 253)),
+    linear-gradient(180deg, #F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%, 100% 200%;
+    background-position: 0 0, 0 100%;
+    background-origin: padding-box, border-box;
+    animation: highlight 1s infinite alternate;
+}
+@keyframes highlight {
+  100% {
+    background-position: 0 0, 0 0;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+fieldset {
+  display: block;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-before: 0em;
+  -webkit-padding-start: 0em;
+  -webkit-padding-end: 0em;
+  -webkit-padding-after: 0em;
+  border: 0px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  min-width: -webkit-min-content;
+  padding: 30px;
+}
+.ghost-input{
+  display: block;
+  font-weight:300;
+  width: 100%;
+  font-size: 25px;
+  border:2px;
+  outline: none;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #000000;
+  background: #D3D3D3;
+  /*font-family: Open Sans,Verdana;*/
+  padding: 10px 15px; /*These lines screw up footer*/
+  margin: 30px 0px; /*Will confer with rest of group*/
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.ghost-input:focus {
+  border-bottom:1px solid #ddd;
+}
+.ghost-button {
+  background-color: #D3D3D3;
+  padding:10px 30px;
+  width: 100%;
+  min-width: 350px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.ghost-button:hover {
+  border:2px solid #515151;
+}
+li p {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  background: transparent;
+  border: solid;
+  border-radius: 25px;
+}
+
+/*For main tab*/
+.headerTable {
+  opacity: 0.9;
+  width: 100%;
+  background-color: deepskyblue;
+  float: left;
+  cursor: pointer;
+  font-size: 17px;
+  text-align: center;
+  
+}
+
+.newstab-content {
+  height: 1000px;
+  background-image: url(bluesquares.png); 
+  color: white; 
+  font-size: 25px; 
+  font-weight:300;
+  -webkit-animation: AnimationName 60s ease infinite;
+-moz-animation: AnimationName 60s ease infinite;
+animation: AnimationName 60s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.abouttab-content {
+  height: 1000px;
+  background-image: url(bluesquares.png); 
+  color: white; 
+  font-size: 25px; 
+  font-weight:300;
+  -webkit-animation: AnimationName 60s ease infinite;
+-moz-animation: AnimationName 60s ease infinite;
+animation: AnimationName 60s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.contacttab-content {
+  height: 1000px;
+  background-image: url(bluesquares.png);
+  color: white;
+  font-size: 25px; 
+  font-weight:300;
+  -webkit-animation: AnimationName 60s ease infinite;
+-moz-animation: AnimationName 60s ease infinite;
+animation: AnimationName 60s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+.headertab-content {
+  height: 0px;
+  background-image: url(bluesquares.png);
+}
+.header{
+  padding-left: 200px;
+}
+.headerTable a {
+  float: left;
+  display: block;
+  padding: 12px;
+  text-align: center;
+  color: white;
+  max-height: 150px;
+ }
+
+.headerTable a:hover {
+  color: grey;
+  border: none;
+}
+
+.tab button.active {
+  background-color: #777;
+}
+img {
+  border-radius: 50%;
+  background: white;
+}
+/*For the filter tabs (likes, retweets, etc.)*/
+.tabTable {
+  background-color: rgb(18, 64, 107);
+  color: white;
+  float: left;
+  /*border: none;*/
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  min-width: 100%;
+}
+.nav-tabs>li>a
+{
+  border-radius: 0px;
+}
+#tableTabBar li
+{
+  width: 25%;
+  border-radius: 0px;
+}
+#tableTabBar
+{
+  width: 1000px;
+  left: 100;
+  position: relative;
+  margin: 0 auto;
+}
+
+.tabTable:hover {
+  background-color: #777;
+}
+
+.tabcontent {
+  background: transparent;
+  color: white;
+  display: none;
+  padding: 80px 0px 100px 0px;
+  height: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+.tab-content {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+#Likes {background-color:transparent;}
+#Retweets {background-color:transparent;}
+#Trending {background-color:transparent;}
+#Viral {background-color:transparent;}
+
+#Home {background-color:transparent;}
+#News {background-color:transparent;}
+#Contact {background-color:transparent;}
+#About {background-color:transparent;}
+
+#viralContent, #trendingContent, #historyContent 
+{
+  background: linear-gradient(rgba(200,200,200,0.5), rgba(100,100,100,0.5));
+  padding: 5%;
+  position: relative;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 1000px;
+}
+#historyContent {padding:2%}
+
+#hashtags_table th,td
+{
+  text-align: center;
+  min-width: 120px;
+}
+#historyContent, #trendingContent, #viralContent
+{
+  min-height:800px;
+}
+
+#default_search {
+  width:1000px; 
+  height: 900px; 
+  color:rgb(200,200,200); 
+  font-size: 40pt;
+  text-shadow: 1px 1px black;
+}
+
+.row_col {
+  width: 10px;
+  text-align: center;
+}
+
+#row_col {
+  width: 10px;
+  text-align: center;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+  background: linear-gradient(270deg, #42b9e0, #15bcf3, skyblue, deepskyblue);
+  opacity: 0.9;
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+  background-size: 1000% 1000%;
+  border-collapse: collapse;
+}
+
+ul a
+{
+  color: #acbac3;
+}
+
+.text_col {
+  width: 600px;
+  text-align: center;
+}
+
+#text_col {
+  width: 600px;
+  text-align: center;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+
+  background: linear-gradient(270deg, #42b9e0, #15bcf3, skyblue, deepskyblue);
+  opacity: 0.9;
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+  background-size: 1000% 1000%;
+  border-collapse: collapse;
+}
+
+.screen_col {
+  width: 200px;
+  text-align: center;
+}
+
+#screen_col {
+  width: 200px;
+  text-align: center;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+  background: linear-gradient(270deg, #42b9e0, #15bcf3, skyblue, deepskyblue);
+  opacity: 0.9;
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+  background-size: 1000% 1000%;
+  border-collapse: collapse;
+}
+
+.likes_col {
+  width: 50px;
+  text-align: center;
+}
+
+#likes_col {
+  width: 50px;
+  text-align: center;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+  background: linear-gradient(270deg, #42b9e0, #15bcf3, skyblue, deepskyblue);
+  opacity: 0.9;
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+  background-size: 1000% 1000%;
+  border-collapse: collapse;
+}
+#likes_col a, #retweets_col a
+{
+  cursor: pointer;
+}
+
+.retweets_col{
+  width: 50px;
+  text-align: center;
+}
+
+#retweets_col{
+  width: 50px;
+  text-align: center;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+  background: linear-gradient(270deg, #42b9e0, #15bcf3, skyblue, deepskyblue);
+  opacity: 0.9;
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+  background-size: 1000% 1000%;
+  border-collapse: collapse;
+}
+
+.date_col {
+  width: 100px;
+  text-align: center;
+}
+
+
+#date_col {
+  width: 100px;
+  text-align: center;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+  background: linear-gradient(270deg, #42b9e0, #15bcf3, skyblue, deepskyblue);
+  opacity: 0.9;
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+  background-size: 1000% 1000%;
+  border-collapse: collapse;
+}
+
+#export_button {
+  border: 2px solid transparent;
+  border-radius: 2px;
+  margin-top: 10px;
+  color: black;
+  font-size: 17px;
+  opacity: 0.9;
+  width: 15%;
+  height: 50px;
+  background-image: linear-gradient(white,rgb(255, 253, 248));
+  transition: all 0.2s ease 0s;
+}
+
+#export_button:hover {
+  background: #2b2d2e;
+  color: white;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.2s ease 0s;
+}
